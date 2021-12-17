@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        myRb.velocity = new Vector3(-5.0f, 0, 0);
+        myRb.velocity = new Vector3(0, -5.0f, 0);
         if(timer<=0)
         {
             timer = timeLength;

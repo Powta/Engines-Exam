@@ -27,29 +27,29 @@ public class Enemy : MonoBehaviour
     //Enemy Movemement
     private void Movement()
     {
-        if(isGoingLeft) 
-        {
-            if (transform.position.x > leftPos)
-            {
-                myRb.velocity = new Vector3(-moveSpeed, myRb.velocity.y, myRb.velocity.z);
-            }
-            else
-            {
-                isGoingLeft = false;
-            }
-        }
+        //if(isGoingLeft) 
+        //{
+        //    if (transform.position.x > leftPos)
+        //    {
+        //        myRb.velocity = new Vector3(-moveSpeed, myRb.velocity.y, myRb.velocity.z);
+        //    }
+        //    else
+        //    {
+        //        isGoingLeft = false;
+        //    }
+        //}
 
-        else
-        {
-            if (transform.position.x < rightPos)
-            {
-                myRb.velocity = new Vector3(moveSpeed, myRb.velocity.y, myRb.velocity.z);//move right
-            }
-            else
-            {
-                isGoingLeft = true;
-            }
-        }
+        //else
+        //{
+        //    if (transform.position.x < rightPos)
+        //    {
+        //        myRb.velocity = new Vector3(moveSpeed, myRb.velocity.y, myRb.velocity.z);//move right
+        //    }
+        //    else
+        //    {
+        //        isGoingLeft = true;
+        //    }
+        //}
     }
 
 }
