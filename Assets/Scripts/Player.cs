@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     private int numOfJumps = 0;
     public bool isFalling = true;
 
+    public GameObject bulletPrefab;
+
     //action
     public static event System.Action<string> enemyKilled;
     // Start is called before the first frame update
@@ -31,6 +33,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerInput();
+        if(Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        }
+        
         if (myRb.velocity.y < 0)
         {
             isFalling = true;
