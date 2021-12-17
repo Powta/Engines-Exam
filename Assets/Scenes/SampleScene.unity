@@ -890,6 +890,7 @@ MonoBehaviour:
   time: {fileID: 738197006}
   scoreVar: 0
   liveVar: 0
+  timeLength: 20
 --- !u!4 &1005403205
 Transform:
   m_ObjectHideFlags: 0
